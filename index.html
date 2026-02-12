@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy 30th Birthday Akka ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #222;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+header h2 {
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 14px 26px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover { transform: scale(1.08); }
+
+section {
+  padding: 60px 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.memories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffeef1;
+  padding: 20px;
+  border-radius: 16px;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.highlight { font-weight: 800; }
+
+.badge {
+  display: inline-block;
+  background: #fff;
+  color: #ff6b81;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+/* side-by-side image text */
+.side-by-side {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.side-by-side img {
+  width: 320px;
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.side-by-side p {
+  flex: 1;
+  min-width: 260px;
+}
+
+/* prevent face crop */
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* envelope reveal */
+.envelope {
+  background: #fff0f3;
+  border: 2px dashed #ff6b81;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hidden-img {
+  display: none;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+  .side-by-side { flex-direction: column; }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Happy 30th Birthday Akka 🎉</h1>
+  <h2>From your Sai Pandu — always your tammudu ❤️</h2>
+  <div class="badge">Dr. Akka</div>
+  <button class="btn" onclick="scrollToSection()">Open Surprise</button>
+</header>
+
+<section id="message" class="reveal">
+  <div class="section-title">From Sai Pandu</div>
+
+  <div class="side-by-side">
+    <img src="img4.jpg" alt="You and Your sai pandu">
+
+    <p>
+      Happy 30th, Akka. Not writing this like a formal wish — this is from your Sai Pandu.<br><br>
+
+      You’ve been my guide, fighter, problem-solver, and the one who fixes everything… including people’s teeth and my life situations<br><br>
+
+      Ever since you got married last year, whenever i come home it feels different. I miss you — not a little — a LOT. Our random talks, roasting sessions, small fights, and our sitcom binging<br><br>
+
+      <span class="highlight">Still — wherever you are, that’s home energy for me.</span>
+    </p>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="section-title">Core Memories</div>
+  <div class="memories">
+    <div class="card">
+      Subway Surfers coin scam — you were collecting coins like treasure, 
+      I spent them without telling you, acted innocent, got caught in 2 minutes. 
+      Still one of the funniest crimes of my life.
+    </div>
+
+    <div class="card">
+      Kashi temple visit — you holding my hand while I bent and touched the lingam, 
+      and we somehow managed to repeat the whole line process multiple times 
+      without security stopping us. Core memory locked.
+    </div>
+
+    <div class="card">
+      Watching Friends together and loving every episode — 
+      laughing at the same jokes and pretending we hadn’t already seen them.
+    </div>
+
+    <div class="card">
+      And there are too many more — cooking, Charminar trip, 
+      your wedding moments, random talks — a lifetime archive still growing.
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="section-title">Our Memories</div>
+
+  <div class="memories">
+
+    <div class="card">
+      <img src="img3.jpg" alt="marriage reception">
+      Reception day — seeing you handle everything, smiling through the chaos, 
+      and still checking if I ate or not. Classic you.
+    </div>
+
+    <div class="card">
+      <img src="img2.jpg" alt="wedding day">
+      Wedding day — proud, emotional, slightly overwhelmed, 
+      and still my same akka in between all the rituals.
+    </div>
+
+    <div class="card">
+      <img src="img1.jpg" alt="pre wedding day">
+      The day before — all the prep, tension, jokes, photos, 
+      and those few calm moments we got to just sit and talk.
+    </div>
+
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="section-title">Things I’ll Always Say About You</div>
+  <ul>
+    <li>Strong without showing off</li>
+    <li>Smart decisions (even when I argue)</li>
+    <li>Dry humor assassin</li>
+    <li>Always shows up for family</li>
+    <li>Built different — akka edition</li>
+  </ul>
+</section>
+
+<section class="reveal">
+  <div class="section-title">Birthday Wish</div>
+
+  <div class="side-by-side">
+    <img src="img5.jpg" alt="Cutest akka">
+
+    <p>
+      I hope this new decade gives you less stress, more peace, bigger wins, and unlimited reasons to smile.<br><br>
+
+      May your days stay light, and your heart stay exactly the same.<br><br>
+
+      And yeah — don’t forget — no matter how grown up we get —
+      <span class="highlight">I’ll always be your Sai Pandu.</span>
+    </p>
+  </div>
+</section>
+
+<footer>
+  Made with full love, missing you a lot — by your Sai Pandu 💌
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+function scrollToSection() {
+  document.getElementById('message').scrollIntoView({behavior: 'smooth'});
+}
+
+/* one-time confetti on load */
+window.onload = function() {
+  confetti({ particleCount: 200, spread: 90, origin: { y: 0.6 } });
+};
+
+/* reveal on scroll */
+const reveals = document.querySelectorAll(".reveal");
+function revealOnScroll() {
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 80) el.classList.add("active");
+  });
+}
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+</script>
+
+<audio id="bgMusic" autoplay loop>
+  <source src="friends.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const music = document.getElementById("bgMusic");
+music.volume = 0.15; // low volume
+</script>
+
+<script>
+document.body.addEventListener("click", () => {
+  music.play();
+}, { once: true });
+</script>
+
+</body>
+</html>
